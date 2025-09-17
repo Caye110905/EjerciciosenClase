@@ -1,0 +1,82 @@
+package Tienda;
+
+
+enum Categoria {
+	Laptop, SmartPhone, Tablet
+}
+
+class Producto {
+	private String codigo;
+	private String nombre;
+	private Double precio;
+	private Categoria categoria;
+	private int stock;
+	
+	public Producto(String codigo, String nombre, Double precio, Categoria categoria, int stock) {
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.categoria = categoria;
+		this.stock = stock;
+	}
+	
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public Categoria getCategoria() {
+        return categoria;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+    
+    public void setCodigo(String codigo) {
+    	this.codigo = codigo;
+    }
+    
+    public void setNombre(String nombre) {
+    	this.nombre = nombre;
+    }
+    
+    public void setCategoria(Categoria categoria) {
+    	this.categoria = categoria;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public double valorStock() {
+        return precio * stock;
+    }
+    
+    public String toString() {
+    	if(stock == 0) {
+    		return 
+    	}
+    }
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+	}
+
+}
