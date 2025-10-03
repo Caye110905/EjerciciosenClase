@@ -1,6 +1,5 @@
 package Tienda;
 
-
 enum Categoria {
-	Laptop, SmartPhone, Tablet
+    LAPTOP, SMARTPHONE, TABLET
 }
